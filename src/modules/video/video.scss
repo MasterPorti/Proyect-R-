@@ -1,0 +1,41 @@
+.videoContainer {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  width: 400px;
+}
+
+.videoImagen {
+  border-radius: 1rem;
+
+  transition: transform 0.5s;
+}
+
+.videoImagen:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.themesContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  button {
+    background-color: #d9d9d9;
+    font-family: "Sarabun", sans-serif;
+    height: 1.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 5rem;
+  }
+}

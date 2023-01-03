@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import "./App.css";
+import ProfileCourse from "./modules/profileCourse/profileCourse";
+import Home from "./pages/home/home";
+import Video from "./pages/videos/video";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/videos" element={<Video />}></Route>
+        <Route
+          path="/profileCourse/:Paramsuuid"
+          element={<ProfileCourse />}></Route>
+      </Routes>
+      {/* <Link to='/'>Home</Link>
+      <Link to='/videos'>Video</Link> */}
     </div>
   );
 }
