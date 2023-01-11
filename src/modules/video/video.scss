@@ -12,7 +12,6 @@
 
 .videoImagen {
   border-radius: 1rem;
-
   transition: transform 0.5s;
 }
 
@@ -37,5 +36,16 @@
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     border-radius: 5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .videoContainer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .videoImagen {
+    border-radius: 0;
   }
 }

@@ -2,7 +2,13 @@
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
-
   margin-left: 0.625rem;
   margin-right: 0.625rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .ContainerVideos {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

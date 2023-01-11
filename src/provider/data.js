@@ -40,3 +40,15 @@ export default function Data() {
     ],
   };
 }
+
+/// Temas
+// UI/UX
+// Backend
+// Frontend
+// JavaScript
+// Css
+// html
+// nodejs
+// express
+//react
+// Ingles
